@@ -1,5 +1,5 @@
-// @import 'core/variables';
-// @import 'core/reset';
+@import 'core/variables';
+@import 'core/reset';
 // @import 'components/code';
 // @import 'components/links';
 // @import 'layout/page';
@@ -9,14 +9,6 @@
 
 
 /* reset styles */
-
-* {
-    box-sizing: border-box;
-    font-family: Circular, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-  }
   
   a {
     color: white;
@@ -37,11 +29,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
   }
-  .hero-title {
-    margin-top: 50px;
-  }
+  
   .logo {
     height: 30px;
   }
@@ -56,18 +45,7 @@
   
   .link {
     padding: 10px;
-    font-size: 14px;
     font-weight: bold;
-  }
-  
-  .link:hover {
-    color: #4bb84a;
-  }
-  
-  .link-signup:before {
-    padding-left: 4px;
-    content: '|';
-    color: white;
   }
   
   /* main */
@@ -80,21 +58,19 @@
   
   .hero {
     padding: 60px 30px 30px 30px;
-    background-color: #0691ff;
-    color: white;
     height: 50vh;
   }
   
   .hero-title {
   
     max-width: 600px;
-    font-size: 3rem;
+  
     line-height: 55px;
   }
   
   .hero-subtitle {
     margin-top: 20px;
-    font-size: 1.5rem;
+  
   }
   
   .hero-plans {
@@ -102,8 +78,6 @@
     margin-top: 30px;
     padding: 5px 25px;
     border-radius: 50px;
-    background-color: #4bb84a;
-    font-size: 10px;
     font-weight: bold;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -112,7 +86,7 @@
   .hero-policy {
     display: block;
     margin-top: 30px;
-    font-size: 10px;
+    //font-size: 10px;
   }
   
   /* benefits area */

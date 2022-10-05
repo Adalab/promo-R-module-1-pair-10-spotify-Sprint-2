@@ -1,6 +1,89 @@
-// fonts
-$font-main: 'Roboto', sans-serif;
+$colorBlack: black;
+$colorTop: white;
+$colorPlans: #4bb84a;
+$colorHero: #0691ff;
+$colorFooter: #999;
 
-// colors
-$color-bg: #f3f4f5;
-$color-secondary: #999;
+$fontNav: 14px;
+$fontSubapartados: 10px;
+$fontBenefits: 35px;
+$fontTitle: 3rem;
+$fontSubtitle: 1.5rem;
+
+/*$colorText
+$colorBackground */
+
+.header {
+    background-color: $colorBlack;
+}
+
+.link {
+    color: $colorTop;
+    font-size: $fontNav; 
+}
+
+.link-signup:before  {
+    content: '|';
+    color: $colorTop;
+    padding-left: 4px;
+}
+
+.link:hover {
+    color: $colorPlans;
+}
+    
+.hero{
+    background-color: $colorHero;
+    color: $colorTop;
+    &-title{
+        color: $colorTop;
+        font-size: $fontTitle;
+    }
+    &-subtitle{
+        color: $colorTop;
+        font-size: $fontSubtitle;
+    }
+    &-plans {
+        background-color: $colorPlans;
+        color: $colorTop;
+        font-size: $fontSubapartados;
+    }
+    &-policy {
+        color: $colorTop;
+        font-size: $fontSubapartados;
+    }
+}
+
+
+
+
+
+.footer {
+    background-color: black;
+  }
+  
+.footer, 
+.footer * {
+    color: #999;
+  }
+  
+  .footer-menu-links:hover {
+    color: white;
+  }
+  
+//----------------------FUENTES---------------------
+ 
+
+  .benefits-title {
+    font-size: 35px;
+  }
+  
+  .benefit-title {
+    font-size: 1.25rem;
+  }
+
+  .footer,
+  .footer * {
+    font-size: 10px;
+  }
+
