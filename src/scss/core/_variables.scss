@@ -9,6 +9,7 @@ $fontSubapartados: 10px;
 $fontBenefits: 35px;
 $fontTitle: 3rem;
 $fontSubtitle: 1.5rem;
+$fontBenefit-title: 1.25rem;
 
 /*$colorText
 $colorBackground */
@@ -56,34 +57,12 @@ $colorBackground */
 
 
 
+.benefits-title {
+  font-size: $fontBenefits;
+  color: $colorBlack;
+}
 
-
-.footer {
-    background-color: black;
-  }
-  
-.footer, 
-.footer * {
-    color: #999;
-  }
-  
-  .footer-menu-links:hover {
-    color: white;
-  }
-  
-//----------------------FUENTES---------------------
- 
-
-  .benefits-title {
-    font-size: 35px;
-  }
-  
   .benefit-title {
-    font-size: 1.25rem;
-  }
-
-  .footer,
-  .footer * {
-    font-size: 10px;
+    font-size: $fontBenefit-title;
   }
 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es" class="size-m">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./assets/css/main.css"/>
+  <title>Registro</title>
+</head>
+<body>
+  <header class="header-signup">
+    <a href="./index.html"><img src="./assets/images/logo-negro.png" alt="Logo Spotify" class="logo-registro"></a>
+    <h1>Regístrate gratis para escuchar.</h1>
+    <a class="registrate-fb" href="#">Registrate con Facebook</a>
+    <a class="registrate-gg" href="#">Registrate con Google</a>
+  </header>
+  <main>
+    <form action="https://adalab-server-form.herokuapp.com/" method="POST" class="form" >
+      <h2>Registrate con tu correo electrónico</h2>
+      <fieldset>
+        <legend></legend>
+            <div>
+              <label for="emailType">¿Cuál es tu correo eletrónico?</label>
+              <input type="email" name="emailType" id="emailType" placeholder="Pon tu correo electrónico" >
+            </div>
+            <div>
+              <label for="emailTypeconfirm">Confirme el correo electrónico</label>
+              <input type="email" name="emailType" id="emailTypeconfirm" placeholder="Vuelve a poner tu correo electrónico" >
+            </div>
+      
+            <div>
+                <label for="passwordType">Crea una contraseña</label>
+                <input type="password" name="passwordType" id="passwordType" placeholder="Crea una contraseña">
+            </div>
+      
+            <div>
+              <label for="textType">¿Cómo quieres que te llamemos?</label>
+              <input type="text" name="textType" id="textType" placeholder="Pon un nombre de perfil">
+            </div>
+        </fieldset>
+        <fieldset>
+        <div>
+          <label for="textTypeday">Día</label>
+          <input type="text" name="textType" id="textTypeday" placeholder="DD">
+        </div>
+        <div>
+          <label for="selectType">Mes</label>
+          <select name="selectType" id="selectType" placeholder="Mes">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+            </select>
+        </div>
+      
+        <div>
+          <label for="textTypeyear">Año</label>
+          <input type="text" name="textType" id="textTypeyear" placeholder="AAAA">
+        </div>
+        </fieldset>
+        <fieldset>
+      <h3>¿Cuál es tu género?</h3>
+        <div>
+          <label for="radioType1">
+          <input type="radio" name="radioType" value="Hombre" id="radioType1">
+          Hombre</label>
+          <label for="radioType2">
+          <input type="radio" name="radioType" value="Mujer" id="radioType2">
+          Mujer</label>
+          <label for="radioType3">
+          <input type="radio" name="radioType" value="no binario" id="radioType3">
+          No binario</label>
+      </div>
+        <div>
+            <input type="checkbox" name="checkboxType" value="a" id="checkboxType1">
+            <label for="checkboxType1">Quiero que me enviéis novedades y ofertas de Spotify</label>
+        </div>
+      
+        <div>
+            <input type="checkbox" name="checkboxType" value="b" id="checkboxType2">
+            <label for="checkboxType2">Compartir mis datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.</label>
+        </div>
+        </fieldset>
+        <input type="submit" value="Registrarte">
+    </form>
+  
+  </main>
+    
+</body>
+</html>
